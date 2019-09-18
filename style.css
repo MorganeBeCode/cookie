@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 5px;
   background-color: #004900;
   padding: 10px;
@@ -19,9 +19,4 @@
 
 button {
   font-size: 20px;
-}
-#info {
-  background-color: #b1b1b1;
-  text-align: center;
-  padding: 10px;
 }
