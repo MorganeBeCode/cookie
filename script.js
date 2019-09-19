@@ -85,11 +85,11 @@ let cheat = document.querySelector("#cheat");
 cheat.addEventListener("click", function () {
     let mdp = prompt("Quel est le mot-de-passe ?");
     if (mdp == "bazinga") {
-        document.querySelector(".grid-container").removeChild(cheat);
+        document.querySelector(".pan2").removeChild(cheat);
         let cheat2 = document.createElement("button");
         cheat2.setAttribute("id", "cheat2");
         cheat2.innerHTML = "cheat";
-        document.querySelector(".grid-container").insertBefore(cheat2, autoclic);
+        document.querySelector(".pan2").appendChild(cheat2);
         cheat2.addEventListener("click", function () {
             score += 1000;
             affichage.innerHTML = score;
